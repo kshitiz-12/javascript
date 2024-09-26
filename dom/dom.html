@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom </title>
+</head>
+<body style="background-color: black;color: aliceblue;">
+    <div class="parent">
+        <div class="day">monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednesdy</div>
+        <div class="day">thursday</div>
+    </div>
+    
+</body>
+<script>
+  const parent=  document.querySelector('.parent')//it selects the element
+  console.log(parent);
+  console.log(parent.children[1].innerHTML);//shows parent k  children ke 2nd element ka inner html
+  
+  for (let i = 0; i < parent.children.length; i++) {
+        console.log( parent.children[i].innerHTML);
+    
+  }
+  parent.children[1].style.color="orange"
+  console.log(parent.firstElementChild);//fetch the first element from parent
+  console.log(parent.LastElementChild);//fetch the last element from  parent
+
+const day1=document.querySelector('.day')
+console.log(day1);
+console.log(day1.parentElement);//shows the parent element
+console.log(day1.nextElementSibling);//shows the next element
+</script>
+</html>

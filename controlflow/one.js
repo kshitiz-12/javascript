@@ -1,5 +1,8 @@
-const coding = ["js","java","c++","python"]
+// const coding = ["js","java","c++","python"]
 
-coding.forEach( function (item){
-    console.log(item);
-})
+// const values = coding.forEach( function (item){
+//     console.log(item);
+//     return item;
+// })
+
+// console.log(values);
