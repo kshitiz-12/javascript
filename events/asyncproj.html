@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>async project</h1>
+    <button class="stop">STOP</button>
+    
+</body>
+<script>
+    const saykshitiz=function(){
+        console.log("kshitiz");
+    }
+    const changeText=function(){
+        document.querySelector('h1').innerHTML="change done"
+
+    }
+    const chnge=setTimeout(changeText, 4000)
+   
+    document.querySelector('.stop').addEventListener('click',function(){
+        clearTimeout(chnge)
+        console.log("stopped")
+    })
+    // setTimeout(function(){
+    //     console.log("kshitiz")
+    // },2000)//takes a timeout and then execute the command
+</script>
+</html>

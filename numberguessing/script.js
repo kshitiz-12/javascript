@@ -1,5 +1,5 @@
 let randomno = Math.floor(Math.random() * 100) + 1;  // Generating random number between 1 and 100
-console.log(randomno);
+ console.log(randomno); 
 const submit = document.querySelector('#subt');  // Correct selector for submit button
 const userinp = document.querySelector('#guessfield');
 const guesses = document.querySelector('.guesses');
